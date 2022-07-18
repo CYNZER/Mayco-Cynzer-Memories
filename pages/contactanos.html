@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+
+</head>
+<style>
+    body{
+        min-height: 100vh;
+        background-image: url(../img/wallpaper.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    </style>
+<body>
+    <header class="encabezado">
+        <img src="../img/logo.png" alt="" class="logo">
+        <ul class="menulista">
+            <li class="lista"><a href="../index.html">Inicio</a></li>
+            <li class="lista">
+                <p>Sesiones</p>
+                <ul class="sublista">
+                    <li class="subitem"> <a href="newborn.html">Newborn</a></li>
+                    <li class="subitem"> <a href="baby.html">Baby</a></li>
+                    <li class="subitem"><a href="cakesmash.html">CakeSmash</a></li>
+                </ul>
+            <li class="lista"><a href="galerias.html">Galerias</a></li>
+            <li class="lista"><a href="contactanos.html">Contactanos</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="contenedor">
+            <h1 class="titulo">Contactanos</h1>
+                 <div class="container">
+                    <form class="row">
+                        <h3>Sexo:</h3>
+                        <div class="col-4">
+                            <input type="radio" class="form-radio" id="hombre"><label for="hombre" class="form-label">Hombre</label>
+                        </div>
+                        <div class="col-4">
+                            <input type="radio" class="form-radio" id="mujer"><label for="mujer" class="form-label">Mujer</label>
+                        </div>
+                        <div class="col-4">
+                            <input type="radio" class="form-radio" id="otros"><label for="otros" class="form-label">Otros</label>
+                        </div>
+                        <div class="col-6">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="col-6">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                        </div>
+                        <div class="col-12">
+                            <label for="emailInput" class="form-label">Email</label>
+                             <input type="email" class="form-control" id="emailInput" placeholder="Direccion Email">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <label for="estadoCivil" class="form-label">Estado Civil:</label>
+                            <select name="estadoCivil" class="select">
+                                <option value="Soltero/a" class="option">Soltero/a</option>
+                                <option value="Casado/a" class="option">Casado/a</option> 
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <label class="form-check-label" for="checkbox">¿Desea recibir las ofertas por e-mail?</label>
+                                <input type="checkbox" name="checkbox" class="form-check-input">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <textarea name="comentario" id="" cols="120" rows="10" placeholder="Deja tu comentario"></textarea>
+                        </div>
+                        <div class="col-3">
+                            <button type="submit" class="btn btn-primary">Enviar comentario</button>
+                        </div>
+                        <div class="col-3">
+                            <button type="reset" class="btn btn-secondary">Limpiar</button>
+                        </div>
+                        
+                    </form>
+                 </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="redes">
+            <h2 class="redes__tx">Nuestras redes</h2>
+            <img class="redes__img" src="../img/footer/facebook.png" alt="facebook">
+            <img class="redes__img" src="../img/footer/instagram.png" alt="instagram">
+            <img class="redes__img" src="../img/footer/twitter.png" alt="twitter">
+        </div>
+        <div class="tyc">Terminos y condiciones</div>
+    </footer>
+</body>
+</html>
