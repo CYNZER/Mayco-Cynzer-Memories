@@ -55,17 +55,16 @@ a:hover{
     list-style: none;
 }
 
-.lista{
-
-    display: flex;
+.lista a{
+    padding: var(--espacio-chico);
+    display: block;
     font-size: var(--font-chico);
     border: 0.3em solid transparent;
     transition: 0.5s;
-    padding: var(--espacio-chico);
     border-radius: var(--espacio-xchico);
 }
 
-.lista:hover{
+.lista a:hover{
     border-color: var(--secundario);
 }
 
@@ -76,10 +75,13 @@ a:hover{
     background-color: var(--primario);
     border-radius: var(--espacio-xchico);
 }
+.sublista li a{
+    padding: var(--espacio-chico);
+}
 .lista:hover .sublista{
     display: block;
 }
-.subitem{
+.subitem a{
     padding: var(--espacio-xchico);
 }
 /* FOOTER */
@@ -109,6 +111,11 @@ padding: 0.5rem;
     max-width: 1200px;
     min-height: 100vh;
 }
+.contenedor__forulario{
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 5rem;
+}
 .grid{
     max-width: 800px;
     margin:auto;
@@ -132,11 +139,18 @@ padding: 0.5rem;
     padding: 1rem;
 }
 
+
 /* BOOSTRAP */
+
+
 .titulo{
     text-align: center;
 }
-
+.textarea__responsive{
+    font-size: var(--font-medio);
+    height: 250px;
+    width: 450px;
+}
 
 
  /* GALERIA */
@@ -147,40 +161,58 @@ padding: 0.5rem;
     min-height: var(--imglarge);
     min-width: var(--imglarge);
     grid-column: 1/2;
-    background-image: url(../img/newborn/small/Mateo31-small.jpg);
+    background-image: url(../img/newborn/Mateo17.jpg);
     background-position: center;
     font-size: var(--font-medio);
     text-align: center;
     align-content: flex-end;
     display: grid;
     background-size: cover;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
 }
+.tarjeta1:hover{
+    background-image: url(../img/newborn/Mateo6.jpg);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    }
 .tarjeta2{
     border-radius: var(--espacio-xchico);
     min-height: var(--imglarge);
     min-width: var(--imglarge);
     grid-column: 2/3;
-    background-image: url(../img/newborn/small/newborn1-small.jpg);
+    background-image: url(../img/newborn/Mateo31.jpg);
     background-position: center;
     font-size: var(--font-medio);
     text-align: center;
     align-content: flex-end;
     display: grid;
     background-size: cover;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
 }
+.tarjeta2:hover{
+    background-image: url(../img/newborn/Mateo8.jpg);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    }
 .tarjeta3{
     border-radius: var(--espacio-xchico);
     min-height: var(--imglarge);
     min-width: var(--imglarge);
     grid-column: 3/4;
-    background-image: url(../img/newborn/small/Mateo17-small.jpg);
+    background-image: url(../img/newborn/Mateo40.jpg);
     background-position: center;
     font-size: var(--font-medio);
     text-align: center;
     align-content: flex-end;
     display: grid;
     background-size: cover;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
 }
+.tarjeta3:hover{
+    background-image: url(../img/newborn/Mateo9.jpg);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    }
 .tarjeta4{
     border-radius: var(--espacio-xchico);
     min-height: var(--imglarge);
@@ -195,34 +227,52 @@ padding: 0.5rem;
     text-align: center;
     align-content: flex-end;
     display: grid;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
 }
+.tarjeta4:hover{
+    background-image: url(../img/baby/Vera41.jpg);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    }
 .tarjeta5{
     border-radius: var(--espacio-xchico);
     min-height: var(--imglarge);
     min-width: var(--imglarge);
     grid-column: 2/3;
     grid-row: 2/3;
-    background-image: url(../img/baby/baby1.jpg);
+    background-image: url(../img/baby/Vera11.jpg);
     background-position: center;
     font-size: var(--font-medio);
     text-align: center;
     align-content: flex-end;
     display: grid;
     background-size: cover;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
 }
+.tarjeta5:hover{
+    background-image: url(../img/baby/Vera43.jpg);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    }
 .tarjeta6{
     border-radius: var(--espacio-xchico);
     min-height: var(--imglarge);
     min-width: var(--imglarge);
     grid-column: 3/4;
     grid-row: 2/3;
-    background-image: url(../img/baby/Vera50\ -\ small.jpg);
+    background-image: url(../img/baby/Vera38.jpg);
     background-position: center;
     font-size: var(--font-medio);
     text-align: center;
     align-content: flex-end;
     display: grid;
     background-size: cover;
+    transition:1s;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.tarjeta6:hover{
+background-image: url(../img/baby/Vera50.jpg);
+box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 .tarjeta7{
     border-radius: var(--espacio-xchico);
@@ -230,42 +280,60 @@ padding: 0.5rem;
     min-width: var(--imglarge);
     grid-column: 1/2;
     grid-row: 3/4;
-    background-image: url(../img/cakesmash/small/cakesmash-small.jpg);
+    background-image: url(../img/cakesmash/Michelle44.jpg);
     background-position: center;
     font-size: var(--font-medio);
     text-align: center;
     align-content: flex-end;
     display: grid;
     background-size: cover;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
 }
+.tarjeta7:hover{
+    background-image: url(../img/cakesmash/Michelle50.jpg);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    }
 .tarjeta8{
     border-radius: var(--espacio-xchico);
     min-height: var(--imglarge);
     min-width: var(--imglarge);
     grid-column: 2/3;
     grid-row: 3/4;
-    background-image: url(../img/cakesmash/small/Michelle46-small.jpg);
+    background-image: url(../img/cakesmash/Michelle46.jpg);
     background-position: center;
     font-size: var(--font-medio);
     text-align: center;
     align-content: flex-end;
     display: grid;
     background-size: cover;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
 }
+.tarjeta8:hover{
+    background-image: url(../img/cakesmash/Michelle51.jpg);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    }
 .tarjeta9{
     border-radius: var(--espacio-xchico);
     min-height: var(--imglarge);
     min-width: var(--imglarge);
     grid-column: 3/4;
     grid-row: 3/4;
-    background-image: url(../img/cakesmash/small/cakesmash1-small.jpg);
+    background-image: url(../img/cakesmash/Michelle49.jpg);
     background-position: center;
     font-size: var(--font-medio);
     text-align: center;
     align-content: flex-end;
     display: grid;
     background-size: cover;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
 }
+.tarjeta9:hover{
+    background-image: url(../img/cakesmash/Michelle52.jpg);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    }
 
 
 
@@ -280,9 +348,15 @@ padding: 0.5rem;
     grid-column: 1/3;
     background-position: center;
     background-size: cover;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+}
+.newborn1:hover{
+    background-image: url(../img/newborn/Mateo31.jpg);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 .newborn2{
-    background-image: url(../img/newborn/Mateo31.jpg);
+    background-image: url(../img/newborn/Mateo40.jpg);
     border-radius: var(--espacio-xchico);
     min-height: var(--imgsmall);
     min-width: var(--imgsmall);
@@ -294,9 +368,15 @@ padding: 0.5rem;
     align-content: flex-end;
     display: grid;
     background-size: cover;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+}
+.newborn2:hover{
+    background-image: url(../img/newborn/Mateo6.jpg);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 .newborn3{
-    background-image: url(../img/newborn/newborn1.jpg);
+    background-image: url(../img/newborn/Mateo8.jpg);
     border-radius: var(--espacio-xchico);
     min-height: var(--imgsmall);
     min-width: var(--imgsmall);
@@ -304,9 +384,15 @@ padding: 0.5rem;
     grid-row: 2/3;
     background-position: center;
     background-size: cover;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+}
+.newborn3:hover{
+    background-image: url(../img/newborn/Mateo9.jpg);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 .newborn4{
-    background-image: url(../img/newborn/newborn2.jpg);
+    background-image: url(../img/newborn/Mateo44.jpg);
     border-radius: var(--espacio-xchico);
     min-height: var(--imgsmall);
     min-width: var(--imgsmall);
@@ -314,23 +400,34 @@ padding: 0.5rem;
     grid-row: 3/4;
     background-position: center;
     background-size: cover;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+}
+.newborn4:hover{
+    background-image: url(../img/newborn/Mateo45.jpg);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* BABY */
 
 
 .baby1{
-    background-image: url(../img/baby/Vera40.jpg);
+    background-image: url(../img/baby/Vera11.jpg);
     border-radius: var(--espacio-xchico);
     min-height: var(--imgsmall);
     min-width: var(--imgsmall);
     grid-column: 1/3;
     background-position: center;
     background-size: cover;
-
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+}
+.baby1:hover{
+    background-image: url(../img/baby/Vera32.jpg);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 .baby2{
-    background-image: url(../img/baby/Vera50.jpg);
+    background-image: url(../img/baby/Vera38.jpg);
     border-radius: var(--espacio-xchico);
     min-height: var(--imgsmall);
     min-width: var(--imgsmall);
@@ -342,9 +439,15 @@ padding: 0.5rem;
     align-content: flex-end;
     display: grid;
     background-size: cover;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+}
+.baby2:hover{
+    background-image: url(../img/baby/Vera40.jpg);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 .baby3{
-    background-image: url(../img/baby/baby1.jpg);
+    background-image: url(../img/baby/Vera41.jpg);
     border-radius: var(--espacio-xchico);
     min-height: var(--imgsmall);
     min-width: var(--imgsmall);
@@ -352,9 +455,15 @@ padding: 0.5rem;
     grid-row: 2/3;
     background-position: center;
     background-size: cover;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+}
+.baby3:hover{
+    background-image: url(../img/baby/Vera43.jpg);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 .baby4{
-    background-image: url(../img/baby/baby.jpg);
+    background-image: url(../img/baby/Vera50.jpg);
     border-radius: var(--espacio-xchico);
     min-height: var(--imgsmall);
     min-width: var(--imgsmall);
@@ -362,21 +471,33 @@ padding: 0.5rem;
     grid-row: 3/4;
     background-position: center;
     background-size: cover;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+}
+.baby4:hover{
+    background-image: url(../img/baby/Vera8.jpg);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* CAKESMASH */
 
 .cakesmash1{
-    background-image: url(../img/cakesmash/Michelle44.jpg);
+    background-image: url(../img/cakesmash/Michelle31.jpg);
     border-radius: var(--espacio-xchico);
     min-height: var(--imgsmall);
     min-width: var(--imgsmall);
     grid-column: 1/3;
     background-position: center;
     background-size: cover;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+}
+.cakesmash1:hover{
+    background-image: url(../img/cakesmash/Michelle44.jpg);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 .cakesmash2{
-    background-image: url(../img/cakesmash/cakesmash.jpg);
+    background-image: url(../img/cakesmash/Michelle46.jpg);
     border-radius: var(--espacio-xchico);
     min-height: var(--imgsmall);
     min-width: var(--imgsmall);
@@ -388,9 +509,15 @@ padding: 0.5rem;
     align-content: flex-end;
     display: grid;
     background-size: cover;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+}
+.cakesmash2:hover{
+    background-image: url(../img/cakesmash/Michelle49.jpg);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 .cakesmash3{
-    background-image: url(../img/cakesmash/Michelle46.jpg);
+    background-image: url(../img/cakesmash/Michelle50.jpg);
     border-radius: var(--espacio-xchico);
     min-height: var(--imgsmall);
     min-width: var(--imgsmall);
@@ -398,9 +525,15 @@ padding: 0.5rem;
     grid-row: 2/3;
     background-position: center;
     background-size: cover;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+}
+.cakesmash3:hover{
+    background-image: url(../img/cakesmash/Michelle51.jpg);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 .cakesmash4{
-    background-image: url(../img/cakesmash/cakesmash1.jpg);
+    background-image: url(../img/cakesmash/Michelle52.jpg);
     border-radius: var(--espacio-xchico);
     min-height: var(--imgsmall);
     min-width: var(--imgsmall);
@@ -408,10 +541,16 @@ padding: 0.5rem;
     grid-row: 3/4;
     background-position: center;
     background-size: cover;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+}
+.cakesmash4:hover{
+    background-image: url(../img/cakesmash/Michelle53.jpg);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 
 @media screen and (max-width:800px){
-    .header{
+    .encabezado{
         flex-direction: column;
     }
     :root{
@@ -464,5 +603,11 @@ padding: 0.5rem;
     grid-column: 1/2;
     grid-row: 9/10;
 }
-
+.textarea__responsive{
+    height: 175px;
+    width: 300px;
+}
+.menulista{
+    gap: var(--espacio-xchico);
+}
 }

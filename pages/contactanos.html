@@ -24,7 +24,7 @@
         <ul class="menulista">
             <li class="lista"><a href="../index.html">Inicio</a></li>
             <li class="lista">
-                <p>Sesiones</p>
+                <a href=#>Sesiones</a>
                 <ul class="sublista">
                     <li class="subitem"> <a href="newborn.html">Newborn</a></li>
                     <li class="subitem"> <a href="baby.html">Baby</a></li>
@@ -36,19 +36,19 @@
     </header>
 
     <main>
-        <section class="contenedor">
+        <section class="contenedor__forulario">
             <h1 class="titulo">Contactanos</h1>
                  <div class="container">
                     <form class="row">
                         <h3>Sexo:</h3>
                         <div class="col-4">
-                            <input type="radio" class="form-radio" id="hombre"><label for="hombre" class="form-label">Hombre</label>
+                            <input type="radio" class="form-radio" name="sexo"><label for="sexo" class="form-label">Hombre</label>
                         </div>
                         <div class="col-4">
-                            <input type="radio" class="form-radio" id="mujer"><label for="mujer" class="form-label">Mujer</label>
+                            <input type="radio" class="form-radio" name="sexo"><label for="sexo" class="form-label">Mujer</label>
                         </div>
                         <div class="col-4">
-                            <input type="radio" class="form-radio" id="otros"><label for="otros" class="form-label">Otros</label>
+                            <input type="radio" class="form-radio" name="sexo"><label for="sexo" class="form-label">Otros</label>
                         </div>
                         <div class="col-6">
                             <label for="nombre" class="form-label">Nombre</label>
@@ -76,7 +76,7 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <textarea name="comentario" id="" cols="120" rows="10" placeholder="Deja tu comentario"></textarea>
+                            <textarea name="comentario" id=""  placeholder="Deja tu comentario" class="textarea__responsive"></textarea>
                         </div>
                         <div class="col-3">
                             <button type="submit" class="btn btn-primary">Enviar comentario</button>
