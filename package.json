@@ -1,0 +1,25 @@
+{
+  "name": "memories",
+  "version": "1.0.0",
+  "description": "este es proyectito",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --inlcude-path scss sass/style.scss css/style.css",
+    "watch-css":"nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CYNZER/boostrap.git"
+  },
+  "author": "Mayco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CYNZER/boostrap/issues"
+  },
+  "homepage": "https://github.com/CYNZER/boostrap#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
