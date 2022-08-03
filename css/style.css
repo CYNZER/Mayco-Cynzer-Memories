@@ -194,100 +194,89 @@ footer {
   .newborn1:hover, .newborn2:hover, .newborn3:hover, .newborn4:hover, .baby1:hover, .baby2:hover, .baby3:hover, .baby4:hover, .cakesmash1:hover, .cakesmash2:hover, .cakesmash3:hover, .cakesmash4:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
 
+/*Newborn*/
 .newborn1 {
   background-image: url(../img/newborn/Mateo17.jpg);
   grid-column: 1/3; }
-
-.newborn1:hover {
-  background-image: url(../img/newborn/Mateo31.jpg); }
+  .newborn1:hover {
+    background-image: url(../img/newborn/Mateo31.jpg); }
 
 .newborn2 {
   background-image: url(../img/newborn/Mateo40.jpg);
   grid-column: 3/4;
   grid-row: 1/3; }
-
-.newborn2:hover {
-  background-image: url(../img/newborn/Mateo6.jpg); }
+  .newborn2:hover {
+    background-image: url(../img/newborn/Mateo6.jpg); }
 
 .newborn3 {
   background-image: url(../img/newborn/Mateo8.jpg);
   grid-column: 1/3;
   grid-row: 2/3; }
-
-.newborn3:hover {
-  background-image: url(../img/newborn/Mateo9.jpg); }
+  .newborn3:hover {
+    background-image: url(../img/newborn/Mateo9.jpg); }
 
 .newborn4 {
   background-image: url(../img/newborn/Mateo44.jpg);
   grid-column: 1/4;
   grid-row: 3/4; }
-
-.newborn4:hover {
-  background-image: url(../img/newborn/Mateo45.jpg); }
+  .newborn4:hover {
+    background-image: url(../img/newborn/Mateo45.jpg); }
 
 /*Baby*/
 .baby1 {
   background-image: url(../img/baby/Vera11.jpg);
   grid-column: 1/3; }
-
-.baby1:hover {
-  background-image: url(../img/baby/Vera32.jpg); }
+  .baby1:hover {
+    background-image: url(../img/baby/Vera32.jpg); }
 
 .baby2 {
   background-image: url(../img/baby/Vera38.jpg);
   grid-column: 3/4;
   grid-row: 1/3; }
-
-.baby2:hover {
-  background-image: url(../img/baby/Vera40.jpg); }
+  .baby2:hover {
+    background-image: url(../img/baby/Vera40.jpg); }
 
 .baby3 {
   background-image: url(../img/baby/Vera41.jpg);
   grid-column: 1/3;
   grid-row: 2/3; }
-
-.baby3:hover {
-  background-image: url(../img/baby/Vera43.jpg); }
+  .baby3:hover {
+    background-image: url(../img/baby/Vera43.jpg); }
 
 .baby4 {
   background-image: url(../img/baby/Vera50.jpg);
   grid-column: 1/4;
   grid-row: 3/4; }
-
-.baby4:hover {
-  background-image: url(../img/baby/Vera8.jpg); }
+  .baby4:hover {
+    background-image: url(../img/baby/Vera8.jpg); }
 
 /* CAKESMASH */
 .cakesmash1 {
   background-image: url(../img/cakesmash/Michelle31.jpg);
   grid-column: 1/3; }
-
-.cakesmash1:hover {
-  background-image: url(../img/cakesmash/Michelle44.jpg); }
+  .cakesmash1:hover {
+    background-image: url(../img/cakesmash/Michelle44.jpg); }
 
 .cakesmash2 {
   background-image: url(../img/cakesmash/Michelle46.jpg);
   grid-column: 3/4;
   grid-row: 1/3; }
-
-.cakesmash2:hover {
-  background-image: url(../img/cakesmash/Michelle49.jpg); }
+  .cakesmash2:hover {
+    background-image: url(../img/cakesmash/Michelle49.jpg); }
 
 .cakesmash3 {
   background-image: url(../img/cakesmash/Michelle50.jpg);
   grid-column: 1/3;
   grid-row: 2/3; }
-
-.cakesmash3:hover {
-  background-image: url(../img/cakesmash/Michelle51.jpg); }
+  .cakesmash3:hover {
+    background-image: url(../img/cakesmash/Michelle51.jpg); }
 
 .cakesmash4 {
   background-image: url(../img/cakesmash/Michelle52.jpg);
   grid-column: 1/4;
   grid-row: 3/4; }
-
-.cakesmash4:hover {
-  background-image: url(../img/cakesmash/Michelle53.jpg); }
+  .cakesmash4:hover {
+    background-image: url(../img/cakesmash/Michelle53.jpg); }
 
 @media screen and (max-width: 800px) {
   .encabezado {
