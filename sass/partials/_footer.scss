@@ -1,0 +1,18 @@
+footer{
+    display: flex;
+    background-color: $ColorPrimario;
+    height: 8em;
+    align-items: center;
+    justify-content: space-around;
+}
+.redes__tx{
+    padding: 0.5rem;
+}
+.redes__img{
+    height: 37px;
+    width: 37px;
+}
+.tyc{
+  font-size: $FontChico;
+  font-family: 'Times New Roman', Times, serif;  
+}

@@ -1,0 +1,38 @@
+.encabezado{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $ColorPrimario;
+}
+
+.logo{
+    object-fit: contain;
+    height: 120px;
+    width: 200px;
+}
+
+.menu__lista{
+    display: flex;
+    gap: $EspacioMedio;
+}
+
+.lista a{
+    padding: $EspacioChico;
+    display: block;
+    font-size: $FontChico;
+    transition: 0.5s;
+
+    &:hover{
+        color: white;
+    }
+}
+
+.sublista{
+    display: none;
+    position: absolute;
+    background-color: $ColorPrimario;
+}
+
+.lista:hover .sublista{
+    display: block;
+}

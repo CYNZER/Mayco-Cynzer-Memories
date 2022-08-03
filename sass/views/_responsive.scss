@@ -1,0 +1,60 @@
+@media screen and (max-width:800px){
+    
+    $img: 200px;
+    .encabezado{
+    flex-direction: column;
+    }
+}
+@media screen and (max-width:670px){
+
+    $img: 400px;
+
+    .galeria{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9,1fr)
+    }
+    .tarjeta1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    }
+    .tarjeta2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    }
+    .tarjeta3{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    }
+    .tarjeta4{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    }
+    .tarjeta5{
+    grid-column: 1/2;
+    grid-row: 5/6;
+    }
+    .tarjeta6{
+    grid-column: 1/2;
+    grid-row: 6/7;
+    }
+    .tarjeta7{
+    grid-column: 1/2;
+    grid-row: 7/8;
+    }
+    .tarjeta8{
+    grid-column: 1/2;
+    grid-row: 8/9;
+    }
+    .tarjeta9{
+    grid-column: 1/2;
+    grid-row: 9/10;
+    }
+
+    .textarea__responsive{
+    height: 175px;
+    width: 300px;
+    }
+    .menulista{
+    gap: $EspacioXChico;
+    }
+}
