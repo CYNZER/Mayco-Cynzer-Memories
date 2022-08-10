@@ -8,10 +8,14 @@
     padding: $EspacioMedio;
 }
 
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
 .tarjeta1, .tarjeta2, .tarjeta3, .tarjeta4, .tarjeta5, .tarjeta6, .tarjeta7, .tarjeta8, .tarjeta9{
     border-radius: $EspacioXChico;
-    min-height: $Img;
-    min-width: $Img;
+    @include sizes(300px, 300px);
     background-position: center;
     font-size: $FontMedio;
     text-align: center;
@@ -24,9 +28,17 @@
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
         }
 }
+
+@each $tarjetas in tarjeta1, tarjeta2, tarjeta3, tarjeta4, tarjeta5, tarjeta6, tarjeta7, tarjeta8, tarjeta9 {
+    .#{$tarjetas}{
+        background-image: url(../img/tarjetas/#{$tarjetas}.jpg);
+    }
+    
+}
+
 .tarjeta1{
     grid-column: 1/2;
-    background-image: url(../img/newborn/Mateo17.jpg);
+    // background-image: url(../img/newborn/Mateo17.jpg);
     &:hover{
         background-image: url(../img/newborn/Mateo6.jpg);
     }
@@ -34,7 +46,7 @@
 
 .tarjeta2{
     grid-column: 2/3;
-    background-image: url(../img/newborn/Mateo31.jpg);
+    // background-image: url(../img/newborn/Mateo31.jpg);
         &:hover{
             background-image: url(../img/newborn/Mateo8.jpg);
         }
@@ -42,7 +54,7 @@
 
 .tarjeta3{
     grid-column: 3/4;
-    background-image: url(../img/newborn/Mateo40.jpg);
+    // background-image: url(../img/newborn/Mateo40.jpg);
         &:hover{
             background-image: url(../img/newborn/Mateo9.jpg);
         }
@@ -51,7 +63,7 @@
 .tarjeta4{
     grid-column: 1/2;
     grid-row: 2/3;
-    background-image: url(../img/baby/Vera40.jpg);
+    // background-image: url(../img/baby/Vera40.jpg);
         &:hover{
             background-image: url(../img/baby/Vera41.jpg);
         }
@@ -60,7 +72,7 @@
 .tarjeta5{
     grid-column: 2/3;
     grid-row: 2/3;
-    background-image: url(../img/baby/Vera11.jpg);
+    // background-image: url(../img/baby/Vera11.jpg);
         &:hover{
             background-image: url(../img/baby/Vera43.jpg);
         }
@@ -69,7 +81,7 @@
 .tarjeta6{
     grid-column: 3/4;
     grid-row: 2/3;
-    background-image: url(../img/baby/Vera38.jpg);
+    // background-image: url(../img/baby/Vera38.jpg);
         &:hover{
             background-image: url(../img/baby/Vera50.jpg);
         }
@@ -78,7 +90,7 @@
 .tarjeta7{
     grid-column: 1/2;
     grid-row: 3/4;
-    background-image: url(../img/cakesmash/Michelle44.jpg);
+    // background-image: url(../img/cakesmash/Michelle44.jpg);
         &:hover{
             background-image: url(../img/cakesmash/Michelle50.jpg);
         }
@@ -87,7 +99,7 @@
 .tarjeta8{
     grid-column: 2/3;
     grid-row: 3/4;
-    background-image: url(../img/cakesmash/Michelle46.jpg);
+    // background-image: url(../img/cakesmash/Michelle46.jpg);
         &:hover{
             background-image: url(../img/cakesmash/Michelle51.jpg);
         }
@@ -96,7 +108,7 @@
 .tarjeta9{
     grid-column: 3/4;
     grid-row: 3/4;
-    background-image: url(../img/cakesmash/Michelle49.jpg);
+    // background-image: url(../img/cakesmash/Michelle49.jpg);
         &:hover{
             background-image: url(../img/cakesmash/Michelle52.jpg);
         }
